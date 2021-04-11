@@ -10,6 +10,7 @@ An incident response is a very dynamic and stressing scenario. Every minute coun
 - Save evidence
 - Plan tasks
 - Network mapping
+- Later: Log Analysis Capability
 
 # Proposed Solution
 
