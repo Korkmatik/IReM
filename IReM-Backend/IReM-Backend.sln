@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IReM-Backend", "IReM-Backend\IReM-Backend.csproj", "{9FB0FCAB-D1EE-4C3A-B7B2-4E1DDFBB8889}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FB0FCAB-D1EE-4C3A-B7B2-4E1DDFBB8889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB0FCAB-D1EE-4C3A-B7B2-4E1DDFBB8889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB0FCAB-D1EE-4C3A-B7B2-4E1DDFBB8889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB0FCAB-D1EE-4C3A-B7B2-4E1DDFBB8889}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12888C4A-A504-4385-9DC7-5431403CA52D}
+	EndGlobalSection
+EndGlobal
