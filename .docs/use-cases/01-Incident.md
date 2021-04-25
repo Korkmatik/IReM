@@ -1,138 +1,141 @@
-# /UC01.1/ Case erstellen
+# /UC01.1/ Incident erstellen
 
 ## Übersicht
 
   |||
  ---------------|---------------------------------------------------------------
-  Ziel          | Erstellen eines Cases, damit alle Daten, die zu einem Incident Response dazu gehören gemanaged werden können
+  Ziel          | Erstellen eines Incident, damit alle Daten, die zu einem Incident Response dazu gehören gemanaged werden können
   Vorbedingung  | Der Nutzer ist angemeldet
-  Resultat      | Ein Case ist erstellt und eingestellt
+  Resultat      | Ein Incident ist erstellt und eingestellt
   Nutzer        | Incident Owner
-  Auslöser      | Funktion "Create Case" ausgewählt
+  Auslöser      | Funktion "Create Incident" ausgewählt
   ------------------------------------------------------------------------------
 
 ## Detailbeschreibung
 
-**Kurzbeschreibung**: Ein Incident Owner kann ein Case erstellen und Basis Einstellungen während des Erstellungsvorgangs einstellen.
+**Kurzbeschreibung**: Ein Incident Owner kann ein Incident erstellen und Basis Einstellungen während des Erstellungsvorgangs einstellen.
 
 **Akteure**:
 * Angemeldeter User
 * Web API
 
 **Eingehende Daten**:
-* Nutzer der den Case erstellt
-* Name für den Case
+* Nutzer der den Incident erstellt
+* Name für den Incident
 * Teilnehmer
 * Auslöser
 * Kunde
 * Optionale Beschreibung
 
 **Essentielle Schritte**:
-1. Nutzer wählt Funktion "Create Case" aus
-2. Dialog für das Erstellen eines Cases wird angezeigt
+1. Nutzer wählt Funktion "Create Incident" aus
+2. Dialog für das Erstellen eines Incidents wird angezeigt
 3. Nutzer gibt erforderliche Daten ein und bestätigt
-4. Daten werden in die Datenbank gespeichert und ein Case wird erstellt
+4. Daten werden in die Datenbank gespeichert und ein Incident wird erstellt
 
 **Ausnahmen**:
 - zu 3.) (a) Falls die Daten fehlerhaft sind, wird eine Fehlermeldung angezeigt (b) Weitere Schritte werden abgebrochen
 
 **Änderungshistorie**
 * 24.04.2021; Korkmatik; Use Case angelegt
+* 25.04.2021; Korkmatik; Case zu Incident umbenannt
 
-# /UC01.2/ Case löschen
+# /UC01.2/ Incident löschen
 
 ## Übersicht
 
   |||
  ---------------|---------------------------------------------------------------
-  Ziel          | Löschen eines Cases
-  Vorbedingung  | Der Nutzer ist angemeldet und ein Case wurde erstellt
-  Resultat      | Ein Case zuvor erstellter Case wird von der Datenbank gelöscht
+  Ziel          | Löschen eines Incidents
+  Vorbedingung  | Der Nutzer ist angemeldet und ein Incident wurde erstellt
+  Resultat      | Ein Incident zuvor erstellter Incident wird von der Datenbank gelöscht
   Nutzer        | Incident Owner
-  Auslöser      | Funktion "Delete Case" ausgewählt
+  Auslöser      | Funktion "Delete Incident" ausgewählt
   ------------------------------------------------------------------------------
 
 ## Detailbeschreibung
 
-**Kurzbeschreibung**: Ein Incident Owner kann ein bereits erstelltes Case wieder löschen
+**Kurzbeschreibung**: Ein Incident Owner kann ein bereits erstelltes Incident wieder löschen
 
 **Akteure**:
 * Angemeldeter User
 * Web API
 
 **Eingehende Daten**:
-* Case ID
+* Incident ID
 * Nutzerdaten
 
 **Essentielle Schritte**:
-1. Nutzer wählt das Case aus
+1. Nutzer wählt das Incident aus
 2. Nutzer geht in die Projekt Einstellungen
-3. Nutzer wählt "Delete Case" aus
+3. Nutzer wählt "Delete Incident" aus
 4. Das System zeigt ein confirmation dialog
-5. Nutzer bestätigt, dass er den Case löschen möchte
-6. Case Daten werden aus der Datenbank gelöscht
+5. Nutzer bestätigt, dass er den Incident löschen möchte
+6. Incident Daten werden aus der Datenbank gelöscht
 
 **Ausnahmen**:
 - zu 5.) (a) Falls Nutzer dies nicht bestätigt, werden alle folgenden Schritte abgebrochen.
 
 **Änderungshistorie**
 * 24.04.2021; Korkmatik; Use Case angelegt
+* 25.04.2021; Korkmatik; Case zu Incident umbenannt
 
-# /UC01.3/ Case bearbeiten
+# /UC01.3/ Incident bearbeiten
 
 ## Übersicht
 
   |||
  ---------------|---------------------------------------------------------------
-  Ziel          | Bearbeiten der Einstellungen eines Cases
-  Vorbedingung  | Der Nutzer ist angemeldet und ein Case wurde erstellt
-  Resultat      | Ein Case hat neue Einstellungen
+  Ziel          | Bearbeiten der Einstellungen eines Incidents
+  Vorbedingung  | Der Nutzer ist angemeldet und ein Incident wurde erstellt
+  Resultat      | Ein Incident hat neue Einstellungen
   Nutzer        | Incident Owner
   Auslöser      | Funktion "Settings" ausgewählt
   ------------------------------------------------------------------------------
 
 ## Detailbeschreibung
 
-**Kurzbeschreibung**: Ein Incident Owner kann Einstellungen eines bereits erstellten Cases wieder ändern.
+**Kurzbeschreibung**: Ein Incident Owner kann Einstellungen eines bereits erstellten Incidents wieder ändern.
 
 **Akteure**:
 * Angemeldeter User
 * Web API
 
 **Eingehende Daten**:
-* Case ID
-* Case Settings
+* Incident ID
+* Incident Settings
 * Nutzer ID
 
 **Essentielle Schritte**:
-1. Nutzer wählt das Case aus
+1. Nutzer wählt das Incident aus
 2. Nutzer geht in die Projekt Einstellungen
 3. Nutzer ändert die Einstellungen
 4. Nutzer speichert die Einstellungen
-5. Neue Case Einstellungen werden in der Datenbank gespeichert
+5. Neue Incident Einstellungen werden in der Datenbank gespeichert
 
 **Ausnahmen**:
 - zu 4.) (a) Falls die eingegebenen Daten ungültig sind, wird eine Fehlermeldung angezeigt (b) Weitere Schritte werden abgebrochen
 
 **Änderungshistorie**
 * 24.04.2021; Korkmatik; Use Case angelegt
+* 25.04.2021; Korkmatik; Case zu Incident umbenannt
 
-# /UC01.4/ Cases anzeigen
+# /UC01.4/ Incidents anzeigen
 
 ## Übersicht
 
   |||
  ---------------|---------------------------------------------------------------
-  Ziel          | Cases zu dem ein Nutzer zugeteilt wurde, werden auf der Home Page angezeigt
+  Ziel          | Incidents zu dem ein Nutzer zugeteilt wurde, werden auf der Home Page angezeigt
   Vorbedingung  | Der Nutzer ist angemeldet und ist auf der Home Page
-  Resultat      | Nutzer sieht seine Cases
+  Resultat      | Nutzer sieht seine Incidents
   Nutzer        | Angemeldeter User
   Auslöser      | Funktion "Show Home Page" ausgewählt
   ------------------------------------------------------------------------------
 
 ## Detailbeschreibung
 
-**Kurzbeschreibung**: Ein Nutzer kann auf seiner Home Page sehen, zu welchen Cases er zugeteilt wurde.
+**Kurzbeschreibung**: Ein Nutzer kann auf seiner Home Page sehen, zu welchen Incidents er zugeteilt wurde.
 
 **Akteure**:
 * Angemeldeter User
@@ -143,9 +146,10 @@
 
 **Essentielle Schritte**:
 1. Nutzer öffnet die "Home Page"
-2. Cases werden in kompakter Darstellung aufgelistet
+2. Incidents werden in kompakter Darstellung aufgelistet
 
 **Ausnahmen**:
 
 **Änderungshistorie**
 * 24.04.2021; Korkmatik; Use Case angelegt
+* 25.04.2021; Korkmatik; Case zu Incident umbenannt
