@@ -1,4 +1,4 @@
-# /UC01.1/ Kunde erstellen
+# /UC02.1/ Kunde erstellen
 
 ## Übersicht
 
@@ -37,7 +37,7 @@
 **Änderungshistorie**
 * 25.04.2021; Korkmatik; Use Case angelegt
 
-# /UC01.2/ Kunde löschen
+# /UC02.2/ Kunde löschen
 
 ## Übersicht
 
@@ -75,7 +75,7 @@
 **Änderungshistorie**
 * 25.04.2021; Korkmatik; Use Case angelegt
 
-# /UC01.3/ Kunde bearbeiten
+# /UC02.3/ Kunde bearbeiten
 
 ## Übersicht
 
@@ -114,7 +114,7 @@
 **Änderungshistorie**
 * 25.04.2021; Korkmatik; Use Case angelegt
 
-# /UC01.4/ Kunde anzeigen
+# /UC02.4/ Kunde anzeigen
 
 ## Übersicht
 
