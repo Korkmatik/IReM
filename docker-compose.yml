@@ -1,9 +1,23 @@
 version: '3'
 services:
-    discovery:
-        build:
-            context: service-registry
-            dockerfile: Dockerfile
+    #discovery:
+    #    build:
+    #        context: service-registry
+    #        dockerfile: Dockerfile
+    #    ports:
+    #        - "8761:8761"
+    db:
+        image: mariadb
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: iremdb
         ports:
-            - "8761:8761"
+            - 3306:3306
+        volumes:
+            - irem-data:/var/lib/mysql
+
+volumes:
+    irem-data:
+    
         
