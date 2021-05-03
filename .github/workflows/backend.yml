@@ -3,7 +3,7 @@ name: Backend CI
 on: [push]
 
 jobs:
-  build:
+  backend:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,5 +15,7 @@ jobs:
           distribution: 'adopt'
       - name: Make gradlew executable
         run: chmod +x ./backend/gradlew
-      - name: Build with Gradle
+      - name: Building
         run: ./backend/gradlew build
+      - name: Testing Application
+        run: cd backend && ./gradlew test
